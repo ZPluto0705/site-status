@@ -13,14 +13,6 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="social">
-        <CustomLink
-          iconDom={<GithubOne />}
-          to={`https://github.com/${githubName}/`}
-        />
-        <CustomLink iconDom={<Home />} to={homeUrl} />
-        <CustomLink iconDom={<Mail />} to={`mailto:${emailUrl}`} />
-      </div>
-      <div className="text">
         <p>
           <CustomLink
             text={Package.alia}
@@ -36,11 +28,11 @@ const Footer = () => {
         <p>
           Copyright&nbsp;&copy;&nbsp;2020&nbsp;-&nbsp;{new Date().getFullYear()}
           &nbsp;
-          <CustomLink to="https://www.imsyy.top/" text="無名" />
+          <CustomLink to="https://cizuki.icu/" text="初糖Cizuki" />
           {siteIcp ? (
             <React.Fragment>
               &nbsp;|&nbsp;
-              <CustomLink to="https://beian.miit.gov.cn/" text={siteIcp} />
+              <CustomLink to="https://icp.gov.moe/?keyword=20230781" text={siteIcp} />
             </React.Fragment>
           ) : null}
         </p>
