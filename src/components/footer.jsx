@@ -12,14 +12,11 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <div className="social">
-        <p>
-          <CustomLink
-            text={Package.alia}
-            to="https://github.com/imsyy/site-status"
-          />
-          &nbsp;Version&nbsp;{Package.version}
-        </p>
+    <div className="social">
+      <CustomLink iconDom={<Home />} to={homeUrl} />
+      <CustomLink iconDom={<Mail />} to={`mailto:${emailUrl}`} />
+    </div>
+    <div className="text">
         <p>
           基于&nbsp;
           <CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />
